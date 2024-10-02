@@ -1,0 +1,217 @@
+/* *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    font-size: 62.5%;
+} */
+/* body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    background-color: rgb(24, 27, 30);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+} */
+
+.carousel {
+    position: relative;
+    
+}
+.carousel__item {
+    position: relative;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.1);
+    z-index: 0;
+    transition: all .2s linear;
+}
+.carousel__item img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.carousel__item--main {
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.carousel__item--left {
+    transform: translate(-110%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--right {
+    transform: translate(10%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--left img, .carousel__item--right img {
+    filter: grayscale(80%);
+}
+
+.carousel__item--right:hover {
+    transform: translate(10%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--left:hover {
+    transform: translate(-110%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--main:hover {
+    transform: translate(-50%,-50%) scale(1.2);
+}
+.carousel__item:hover > .carousel__text {
+    opacity: 1;
+}
+.carousel__item:hover img {
+    filter: grayscale(0%);
+}
+
+.carousel__text {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem 1rem;
+    color: #fff;
+}
+
+
+.carousel__btns {
+    position: absolute;
+    transform: translate(-50%, 22rem);
+    display: flex;
+    gap: 2rem;
+}
+.carousel__btn {
+    background-color: transparent;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border:1px solid currentColor;
+    color: #fff;
+    cursor: pointer;
+    margin-top: -70px;
+}
+.carousel__btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.carousel__btn:hover {
+    color: #aaa;
+}
+
+
+/* Modal oyna */
+.modal {
+    display: none; /* Boshlang'ichda ko'rinmas */
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); /* Qora shaffof fon */
+    justify-content: center; 
+    align-items: center;
+}
+
+/* ... (boshqa CSS kodlar) ... */
+
+
+
+/* Tugma dizayni */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Modal oyna */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Modal ichidagi kontent */
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Yopish tugmasi */
+.close {
+    color: #ff4757; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #e84118;
+}
+
+/* Musiqiy tugmalar */
+.music-item {
+    display: block; 
+    background-color: #f1c40f; 
+    color: #ffffff; 
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%; 
+    text-align: center; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    transition: background-color 0.3s; 
+}
+
+.music-item:hover {
+    background-color: #f39c12; 
+}
+
+/* Audio pleerni dizayni */
+audio {
+    margin-top: 10px; 
+    width: 100%; 
+    border-radius: 8px; 
+}

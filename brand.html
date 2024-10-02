@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirzoitov</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="icon-x" href="./photos/my_icon.png">
+  <link rel="stylesheet" href="./foto.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: black;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="orab_turuvchi">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./photos/my_icon.png" style="width: 30px;" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a  class="nav-link active text-white"  aria-current="page" href="#">Uy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Yordam uchun
+              </a>
+              <ul class="dropdown-menu bg-white">
+                <li><a class="dropdown-item" href="#">Murojat uchun +950701044</a></li>
+                <li><a class="dropdown-item" href="#">Web-saytda hatolik!</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-white" href="#">Yordam</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"></a>
+            </li>
+          </ul>
+          <button type="button" class="btn  text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="bi bi-layout-text-sidebar"></i> 
+          </button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn border-white text-white" type="submit">Search</button>
+            </form>
+        </div>
+      </div>
+    </nav>
+    <!-- 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 -->
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Personal web-site</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Bu yerda siz shaxsiy web-siteni korishingiz mumkin.<br> Mening shaxsiy qiziqishlarim hamda ma'lumotlarimni
+            shu yerdan topishingiz mumkin!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="oz_shiorim">
+      <p style="width: 500px; margin-left: 30px; margin-top: 140px;"
+        class="position-absolute display-1 font-monospace col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-1 text-white">
+        Mirzoitov Suhrob</p>
+        <span style="color: white; position: absolute; margin-left: 30px; margin-top: 330px; font-size: 30px; " class="font-monospace">Frontend web-programmer</span>
+        <span style="font-size: 15px; color: white; margin-left: 30px; margin-top: 380px; position: absolute;" class="font-monospace">Personal brand web-site</span>
+        <button type="button" style="margin-left: 30px; margin-top: 470px;"
+        class="btn border-white bg-white text-black btn-lg position-absolute col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-1 font-monospace musiqa_btn" 
+        id="musicButton">Music
+        <i class="bi bi-music-note"></i>
+</button>
+
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Music <i class="bi bi-music-note"></i></h2>
+      <ul>
+          <li><button class="music-item" data-src="./music/music1.mp3">Cris Mj -Gata Only</button></li>
+          <li><button class="music-item" data-src="./music/music2.mp3">Ogryzek-Aura</button></li>
+          <li><button class="music-item" data-src="./music/music3.mp3">SHoxrux-O'zbegim</button></li>
+          <li><button class="music-item" data-src="music4.mp3">Musiqa 4</button></li>
+          <li><button class="music-item" data-src="music5.mp3">Musiqa 5</button></li>
+          <li><button class="music-item" data-src="music6.mp3">Musiqa 6</button></li>
+          <li><button class="music-item" data-src="music7.mp3">Musiqa 7</button></li>
+          <li><button class="music-item" data-src="music8.mp3">Musiqa 8</button></li>
+          <li><button class="music-item" data-src="music9.mp3">Musiqa 9</button></li>
+          <li><button class="music-item" data-src="music10.mp3">Musiqa 10</button></li>
+      </ul>
+      <audio id="audioPlayer" controls></audio>
+  </div>
+</div>
+
+
+
+
+
+
+        <div style="margin-left: 1060px; margin-top: 320px;" class="fotos_me position-absolute">
+          <div  class="carousel rasm_me">
+            <div class="carousel__item carousel__item--left">
+              <img src="https://static01.nyt.com/images/2023/06/06/multimedia/00messi-qjgw/00messi-qjgw-mediumSquareAt3X.jpg" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__item carousel__item--main">
+              <img src="./photos/admin.jpg" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__item carousel__item--right">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgoJvlK-8ghkZXFUpkLe-DtFJ_Xxnkr5Muw&s" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__item">
+              <img src="https://imageio.forbes.com/specials-images/imageserve/65d11181840909c74ae8099a/SOCCER--FEB-15-MLS-Preseason-Inter-Miami-CF-vs-Newell-s-Old-Boys/960x0.jpg?format=jpg&width=960" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__item">
+              <img src="https://tmssl.akamaized.net//images/foto/galerie/lionel-messi-paris-saint-germain-2023-1685872213-108539.jpg?lm=1685872230" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__item">
+              <img src="https://img.olympics.com/images/image/private/t_1-1_300/f_auto/v1687307644/primary/cqxzrctscdr8x47rly1g" alt="dog">
+              <div class="carousel__text">
+                <h3>Cute Puppy</h3>
+                <p>Isn't it cute?!</p>
+              </div>
+            </div>
+            <div class="carousel__btns">
+              <button class="carousel__btn" id="leftBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m15 4l2 2l-6 6l6 6l-2 2l-8-8z"/></svg></button>
+              <button class="carousel__btn" id="rightBtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m9.005 4l8 8l-8 8L7 18l6.005-6L7 6z"/></svg></button>
+            </div>
+          </div>
+        </div>
+
+
+
+      
+    </div>
+
+
+
+  </div>
+  <div style="margin-top: 700px; height: 1200px;" class="Xabar_ma'lumot position-absolute">
+    <div class="xabar_1">
+      <h1 style="margin-left: 30px;" class="text-white display-4 font-monospace ">Ma'lumot</h1>
+      <div class="xabar_foto_1 position-relative" style=" margin-left: 30px; width: 1480px;height: 400px;">
+        <img style="width: 400px; height: 400px;"
+          src="https://smkmucirebon.sch.id/wp-content/uploads/2024/03/3153-scaled.jpg" alt="">
+        <span style="position: absolute; color: white; margin-left: 15px; " class="font-monospace">Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Assumenda nemo ratione, veniam consectetur voluptate molestias itaque ipsum
+          adipisci suscipit est culpa officiis dolorem tempore at inventore, consequatur rem, nobis tenetur saepe modi
+          aliquid temporibus recusandae cumque. Odio voluptates aliquam libero dignissimos officia quos rem id officiis
+          maiores autem architecto dolorem qui quas esse blanditiis, inventore porro facilis. Deserunt alias
+          necessitatibus veniam dolores suscipit ullam temporibus fuga, minima repellendus modi labore sunt aperiam
+          distinctio, a accusamus architecto voluptas ipsam debitis amet nihil ad voluptatem! Assumenda quos quibusdam
+          eum. Assumenda labore quaerat officiis error omnis quam in molestiae, iste aut id dolorem tempora nobis nisi
+          laboriosam necessitatibus magnam vitae sit ea itaque tempore, provident perspiciatis? Aliquam velit porro, est
+          illum vitae culpa natus sunt tempora repudiandae. Voluptatem, officiis voluptate? Aperiam nisi suscipit, totam
+          obcaecati nesciunt minus consequatur quaerat quis eum quasi amet rerum. Eum, vel deleniti. Quod harum amet
+          recusandae inventore cumque fugiat sunt </span>
+      </div>
+
+      <div style="margin-left: 30px; width: 1480px; height: 400px; border: 1px solid black; margin-top: 70px;" class="xabar_foto_2 position-relative">
+        <img  style="width: 400px; height: 400px; margin-left: 1080px;"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVXsQfHa7NTnWz9wN2Sai7Ca9KdyELzoH511Y4tFyLkdm69p9ngqjJhIH6EMyiwV-i35s&usqp=CAU"
+          alt="">
+          <span style="position: absolute; color: white; margin-top: -400px; width: 1079px; position: absolute; " class="font-monospace">Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Assumenda nemo ratione, veniam consectetur voluptate molestias itaque ipsum
+            adipisci suscipit est culpa officiis dolorem tempore at inventore, consequatur rem, nobis tenetur saepe modi
+            aliquid temporibus recusandae cumque. Odio voluptates aliquam libero dignissimos officia quos rem id officiis
+            maiores autem architecto dolorem qui quas esse blanditiis, inventore porro facilis. Deserunt alias
+            necessitatibus veniam dolores suscipit ullam temporibus fuga, minima repellendus modi labore sunt aperiam
+            distinctio, a accusamus architecto voluptas ipsam debitis amet nihil ad voluptatem! Assumenda quos quibusdam
+            eum. Assumenda labore quaerat officiis error omnis quam in molestiae, iste aut id dolorem tempora nobis nisi
+            laboriosam necessitatibus magnam vit</span>
+      </div>  
+
+
+      <div class="xabar_foto_3 position-relative" style=" margin-left: 30px; margin-top: 70px; width: 1480px;height: 400px;">
+        <img style="width: 400px; height: 400px;"
+          src="https://komputergrafika.wordpress.com/wp-content/uploads/2013/08/jaringan-komputer.jpg" alt="">
+        <span style="position: absolute; color: white; margin-left: 15px; " class="font-monospace">Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Assumenda nemo ratione, veniam consectetur voluptate molestias itaque ipsum
+          adipisci suscipit est culpa officiis dolorem tempore at inventore, consequatur rem, nobis tenetur saepe modi
+          aliquid temporibus recusandae cumque. Odio voluptates aliquam libero dignissimos officia quos rem id officiis
+          maiores autem architecto dolorem qui quas esse blanditiis, inventore porro facilis. Deserunt alias
+          necessitatibus veniam dolores suscipit ullam temporibus fuga, minima repellendus modi labore sunt aperiam
+          distinctio, a accusamus architecto voluptas ipsam debitis amet nihil ad voluptatem! Assumenda quos quibusdam
+          eum. Assumenda labore quaerat officiis error omnis quam in molestiae, iste aut id dolorem tempora nobis nisi
+          laboriosam necessitatibus magnam vitae sit ea itaque tempore, provident perspiciatis? Aliquam velit porro, est
+          illum vitae culpa natus sunt </span>
+      </div>
+
+    
+
+    </div>
+<h1 style="color: white; font-size: 60px; margin-left: 30px; margin-top: 70px;">Tarmoq</h1>
+<footer class="tarmoq_qism text-white">
+<div style="margin-top: 50px; width: 100%; height: 250px; border: 1px solid rgb(37, 37, 37); background-color: rgb(37, 37, 37); margin-left: 5px;" class="">
+  <div style="margin-top: 20px; margin-left: 20px; color: rgb(128, 124, 124);" class="instagram font-monospace">
+    Instagram-> mirzoitov_c
+  </div>
+  <div style="margin-top: 20px;  margin-left: 20px; color: rgb(128, 124, 124);" class="telegram font-monospace">
+    Telegram-> @mirzoitov
+  </div>
+  <div style="margin-top: 20px;  margin-left: 20px; color: rgb(128, 124, 124);" class="whatsapp font-monospace">
+    Whatsapp-> +950701044
+  </div>
+  <div style="margin-top: 20px;  margin-left: 20px; color: rgb(128, 124, 124);" class="github font-monospace">
+    Github-> mirzoitov
+  </div>
+  <div style="margin-top: 20px;  margin-left: 20px; color: rgb(128, 124, 124);" class="facebook font-monospace">
+    Facebook-> Mirzoitov Suhrob
+    </div>
+    <div class="batafsil">
+      <a style="text-decoration: none; margin-left: 1260px; margin-top: -10px; position: absolute;" href="#">Batafsil ma'lumot</a>
+    </div>
+    <div style="margin-left: 1180px; display: flex; gap: 60px; margin-top: -60px;" class="tarmoq_icons">
+      <span class="Instagram">0</span>
+      <span class="Telegram">0</span>
+      <span class="whatsapp">0</span>
+      <span class="github">0</span>
+      <span class="facebook">0</span>
+    </div>
+  
+    
+    
+  
+    
+    
+  </div>
+</div>
+
+</footer>
+</div>
+</div>
+
+
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="foto.js"></script>
+</html>
